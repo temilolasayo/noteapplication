@@ -1,7 +1,7 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'https://www.exitussolution.com.ng/');
+define('DB_SERVER', '192.3.183.226');
 define('DB_USERNAME', 'exituss1_sayo');
 define('DB_PASSWORD', 'p@ssword123456');
 define('DB_NAME', 'exituss1_test');
