@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before inserting in database
     if(empty($title_err) && empty($notes_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO notes (title, notes) VALUES (?, ?)";
+        $sql = "INSERT INTO notes (title, notes,regDate) VALUES (?, ?,  now())";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
