@@ -44,7 +44,6 @@
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
                                     echo "<tr>";
-                                        echo "<th>#</th>";
                                         echo "<th>Title</th>";
                                         echo "<th>Notes</th>";
                                         echo "<th>Dates</th>";
@@ -53,8 +52,7 @@
                                 echo "</thead>";
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
-                                    echo "<tr>";
-                                           echo "<td>" . $row['id'] . "</td>";                                 
+                                    echo "<tr>";                                
                                         echo "<td>" . $row['title'] . "</td>";
                                         echo "<td>" . $row['notes'] . "</td>";
                                         echo "<td>" . $row['regDate'] . "</td>";
